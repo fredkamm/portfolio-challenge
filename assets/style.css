@@ -1,0 +1,57 @@
+:root {
+    --main-color: rgb(121, 243, 234);
+    --second-color: rgb(61, 65, 63);
+    --white: #fff;
+
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--white);
+}
+
+/* some css code taken from activity 13 */
+header {
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-size: 30px;
+    padding: 3px 100px 3px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  nav a {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: underline solid 3px;
+  }
+
+  nav a:hover {
+    font-size: 150%;
+    color: white;
+  }
+
+  article {
+    background-image: url('');
+    background-color: bisque;
+    height: 100px;
+  }
+
+  article h1 {
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-size: 30px;
+    width: fit-content;
+    padding: 5px;
+    align-self: center;
+  }
