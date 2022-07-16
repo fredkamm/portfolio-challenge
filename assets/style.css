@@ -2,6 +2,7 @@
     --main-color: rgb(121, 243, 234);
     --second-color: rgb(61, 65, 63);
     --white: #fff;
+    --dark-blue: rgb(6, 18, 120);
 
 }
 body {
@@ -9,28 +10,35 @@ body {
     background-color: var(--white);
 }
 
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* some css code taken from activity 13 */
 header {
-    background-color: var(--second-color);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--second-color);
 }
 
 header h1 {
     color: var(--second-color);
     background-color: var(--main-color);
     font-size: 30px;
-    padding: 3px 100px 3px 0px;
+    float: left;
+    padding: 0% 10% 0% 0%;
 }
 
+/* https://www.youtube.com/watch?v=FEmysQARWFU&t=20s referenced how to same the links in the nav bar */
 nav ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
+    float: right;
   }
   
   nav a {
+    display: inline-block;
+    margin:10px 20px 0px 10px;
     color: var(--main-color);
     font-weight: bold;
     text-decoration: underline solid 3px;
@@ -41,10 +49,12 @@ nav ul {
     color: white;
   }
 
+/* article tag below the header and nav */
   article {
-    background-image: url('');
-    background-color: bisque;
-    height: 100px;
+    display: flex;
+    background-image: url('../assets/Images/sample.jpg');
+    background-size:contain;
+    padding: 10px;
   }
 
   article h1 {
@@ -53,5 +63,36 @@ nav ul {
     font-size: 30px;
     width: fit-content;
     padding: 5px;
-    align-self: center;
+    float: right;
   }
+
+  main {
+    display: flex;
+    font-size: 16px;
+    padding: 0px 50px 0px 50px;
+    flex-direction: column;
+  }
+
+main h2 {
+    font-size: 250%;
+    color: var(--dark-blue);
+    border-right: solid 3px var(--dark-blue);
+    justify-content: flex-start;
+}
+
+#about-me {
+    display: flex;
+}
+
+#work {
+    display: flex;
+}
+
+#contact-me {
+    display: flex;
+}
+
+#contact-me li {
+    display: inline;
+    list-style: none;
+}
