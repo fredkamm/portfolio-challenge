@@ -1,13 +1,12 @@
 :root {
-    --main-color: rgb(121, 243, 234);
+    --main-color: rgb(222, 120, 224);
     --second-color: rgb(61, 65, 63);
     --white: #fff;
     --dark-blue: rgb(6, 18, 120);
 
 }
 body {
-    font-family: sans-serif;
-    background-color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar {
@@ -35,7 +34,7 @@ nav ul {
     display: flex;
     list-style: none;
     float: right;
-  }
+}
   
   nav a {
     display: inline-block;
@@ -43,26 +42,32 @@ nav ul {
     color: var(--main-color);
     font-weight: bold;
     text-decoration: underline solid 3px;
-  }
+}
 
   nav a:hover {
     font-size: 150%;
     color: white;
-  }
+}
 
 /* article tag below the header and nav */
-  article {
-    display: flex;
-    background-image: url('../assets/Images/sample.jpg');
-    background-size: contain;
-  }
+/* used code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text as a reference */
+.container {
+  position: relative;
+  text-align: center;
+}
 
-  article h1 {
-    color: var(--second-color);
-    background-color: var(--main-color);
-    font-size: 30px;
-    width: fit-content;
-  }
+
+.quote  {
+  color: var(--second-color);
+  background-color: var(--main-color);
+  font-size: 30px;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+}
 
   /* content of the page starts here starting with "about me" */
   main {
@@ -70,14 +75,13 @@ nav ul {
     font-size: 16px;
     padding: 0px 50px 0px 50px;
     flex-direction: column; 
-  }
+}
 
 main h2 {
     flex: 0 0 200px;
     font-size: 200%;
     color: var(--dark-blue);
     border-right: solid 3px var(--dark-blue);
-    /* justify-content: flex-start; */
     padding-left: 50px;
 }
 
@@ -89,6 +93,8 @@ main h2 {
 .about-me p {
   display: inline;
   padding: 0 0 0 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
   
 }
 
@@ -97,18 +103,21 @@ main h2 {
     display: flex;
     contain: content;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
+    
 }
 
 .work div {
-  /* display: relative;
-  margin: 0 auto; */
+  display: relative;
+  margin: auto;
   padding: 5px;
+  
 }
 
 .work img {
   display: inline;
   border: 2px solid var(--main-color);
+  
 }
 
 .work img:hover {
@@ -122,5 +131,9 @@ main h2 {
 
 .contact-me li {
     display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-decoration: underline solid 3px var(--dark-blue);
+    padding: 5px;
     list-style: none;
-}
+  }
