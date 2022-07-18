@@ -110,32 +110,72 @@ main h2 {
   padding: 0 0 0 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
-
 }
 
 /* work section */
 #work {
   display: flex;
   contain: content;
-  
 }
 
 #work div {
   display: flex;
-  margin: auto;
+  justify-content: center;
   flex-wrap: wrap;
-
 }
 
 #work img {
   display: inline;
   border: 2px solid var(--main-color);
   opacity: 75%;
+  height: 200px;
+  width: 300px;
 }
 
 #work img:hover {
   border: 5px solid var(--main-color);
   opacity: 100%;
+}
+
+#image1 img {
+  width: 604px;
+  height: 200px;
+}
+
+/* position and style for the text with the images */
+#work h3 {
+  color: var(--second-color);
+  background-color: var(--main-color);
+  font-size: 16px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  padding: 15px 2px;
+}
+
+#image1 h3 {
+  top: 20%;
+  left: 40%;
+}
+
+#image2 h3 {
+  top: 55%;
+  left: 40%;
+}
+
+#image3 h3 {
+  top: 55%;
+  left: 70%;
+}
+
+#image4 h3 {
+  top: 88%;
+  left: 40%;
+}
+
+#image5 h3 {
+  top: 88%;
+  left: 70%;
 }
 
 /* contact me section */
@@ -149,7 +189,7 @@ main h2 {
   font-size:85%;
   text-decoration: none;
   padding: 5px;
-  margin: 5px;
+  margin: 5px 15px auto;
   list-style: none;
   border-bottom: 2px solid var(--dark-blue);
 }
