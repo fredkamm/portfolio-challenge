@@ -180,8 +180,9 @@ main h2 {
 {
   header h1, nav ul {
     display: flex;
-    float:none;
+    float: none;
     justify-content: center;
+    text-align: center;
     font-size: 200%
   }
 
@@ -213,7 +214,41 @@ main h2 {
 }
 
 /* responsive design for the iphone */
-@media screen and (max-width: 820px)
+@media screen and (max-width: 390px)
 {
+  header h1 {
+    font-size: 350%
+  }
 
+  nav ul {
+    font-size: 100%
+  }
+
+  .quote {
+    font-size: 100%;
+    top: 75%
+  }
+
+  main h2 {
+    font-size: 200%;
+  }
+
+  #image1 img {
+    height: 150px;
+    width: 250px;
+  }
+
+  #work img {
+    height: 150px;
+    width: 250px;
+  }
+
+  #work h3 {
+    transform: translate(-31%, 80%);
+  }
+
+  #contact-me li {
+    display: block;
+    font-size: 125%;
+  }
 }
