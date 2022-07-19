@@ -111,6 +111,7 @@ main h2 {
   height: 200px;
   width: 200px;
   margin-top: 2%;
+  border-radius: 50%;
 }
 
 #about-me p {
@@ -152,10 +153,6 @@ main h2 {
 }
 
 /* position and style for the text with the images */
-#image1 h3 {
-
-}
-
 #work h3 {
   color: var(--second-color);
   background-color: var(--main-color);
