@@ -185,17 +185,31 @@ main h2 {
     font-size: 200%
   }
 
-  .container img {
-    height: 400px
-  }
-
   .quote {
     display: flex;
-    top: 85%;
+    top: 65%;
     left: 50%;
     font-size: 150%;
   }
 
+  main, main h2, #about-me, #work, #contact-me {
+    display: block
+  }
+
+  main h2 {
+    font-size: 300%;
+    border-bottom: solid 3px var(--dark-blue);
+    border-right: none;
+  }
+
+  #image1 img {
+    height: 250px;
+  }
+
+  #contact-me li {
+    font-size: 75%;
+  }
+  
 }
 
 /* responsive design for the iphone */
