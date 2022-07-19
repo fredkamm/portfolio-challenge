@@ -105,6 +105,14 @@ main h2 {
   display: flex;
 } 
 
+#about-me img{
+  display: flex;
+  margin-left: 5%;
+  height: 200px;
+  width: 200px;
+  margin-top: 2%;
+}
+
 #about-me p {
   display: inline;
   padding: 0 0 0 30px;
@@ -126,7 +134,7 @@ main h2 {
 
 #work img {
   display: inline;
-  margin: 5px;
+  margin: 1%;
   border: 2px solid var(--main-color);
   opacity: 75%;
   height: 200px;
@@ -139,17 +147,21 @@ main h2 {
 }
 
 #image1 img {
-  width: 614px;
+  width: 610px;
   height: 200px;
 }
 
 /* position and style for the text with the images */
+#image1 h3 {
+
+}
+
 #work h3 {
   color: var(--second-color);
   background-color: var(--main-color);
   font-size: 16px;
   position: absolute;
-  transform: translate(-48%, 200%);
+  transform: translate(-125%, 200%);
   text-transform: uppercase;
   padding: 15px 2px;
 }
@@ -203,6 +215,11 @@ main h2 {
     border-right: none;
   }
 
+  #about-me img{
+    margin-left: 38%;
+    margin-bottom: 2%;
+  }
+
   #image1 img {
     height: 250px;
   }
@@ -217,11 +234,12 @@ main h2 {
 @media screen and (max-width: 390px)
 {
   header h1 {
-    font-size: 350%
+    font-size: 350%;
   }
 
   nav ul {
-    font-size: 100%
+    font-size: 100%;
+    margin-right: 35px;
   }
 
   .quote {
@@ -231,6 +249,11 @@ main h2 {
 
   main h2 {
     font-size: 200%;
+  }
+
+  #about-me img{
+    margin-left: 0%;
+    margin-bottom: 2%;
   }
 
   #image1 img {
