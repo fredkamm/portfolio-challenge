@@ -4,24 +4,8 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation? 
-
-- I want to have a portfolio that allows potential clients to visit if they want to get an idea of how efficent and well layed out my sites can be.
-- What problem does it solve? 
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+- Ny motivation to creating this page was to have a portfolio that allows potential clients to visit if my site they want to get an idea of how efficent and nicely layed out my sites can be.
+- This solves potential marketing conflicts. it's hard to get your name out their and when people do discover you, you want to have a portfolio of past work that potential clients can observe. 
 
 ## Usage
 
@@ -32,6 +16,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
+
+    md![screenshot1](assets/Images/Screen%20Shot%202022-07-19%20at%204.35.27%20PM.png)
+    md![screenshot2](assets/Images/Screen%20Shot%202022-07-19%20at%204.36.04%20PM.png)
+
 
 ## Credits
 
